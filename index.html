@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>BqToys</title>
+</head>
+
+<body>
+
+    <section>
+
+        <header>
+            <a href="#" class="logo">BqToys</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </header>
+
+        <ul class="listaProductos">
+            <li class="list active" data-filter="all">Todos</li>
+            <li class="list" data-filter="dc">DC comics</li>
+            <li class="list" data-filter="hello">Hello Kitty</li>
+            <li class="list" data-filter="heroes">Heroes En Pijama</li>
+            <li class="list" data-filter="marvel">Marvel</li>
+            <li class="list" data-filter="mickey">Mickey Mouse</li>
+        </ul>
+
+        <div class="product">
+
+            <div class="itemBox" data-item="dc"><img src="img/dc1.jpg" alt=""></div>
+            <div class="itemBox" data-item="hello"><img src="img/hello1.png" alt=""></div>
+            <div class="itemBox" data-item="heroes"><img src="img/heroes.png" alt=""></div>
+            <div class="itemBox" data-item="marvel"><img src="img/marvel.png" alt=""></div>
+            <div class="itemBox" data-item="mickey"><img src="img/mickey1.jpg" alt=""></div>
+            <div class="itemBox" data-item="dc"><img src="img/dc2.jpg" alt=""></div>
+            <div class="itemBox" data-item="hello"><img src="img/hello2.jpg" alt=""></div>
+            <div class="itemBox" data-item="heroes"><img src="img/heroes1.png" alt=""></div>
+            <div class="itemBox" data-item="marvel"><img src="img/marvel1.png" alt=""></div>
+            <div class="itemBox" data-item="mickey"><img src="img/mickey2.jpg" alt=""></div>
+            <div class="itemBox" data-item="dc"><img src="img/dc3.jpg" alt=""></div>
+            <div class="itemBox" data-item="hello"><img src="img/hello2.jpg" alt=""></div>
+            <div class="itemBox" data-item="heroes"><img src="img/heroes2.png" alt=""></div>
+            <div class="itemBox" data-item="marvel"><img src="img/marvel2.png" alt=""></div>
+            <div class="itemBox" data-item="mickey"><img src="img/mickey3.jpg" alt=""></div>
+
+        </div>
+    </section>
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
