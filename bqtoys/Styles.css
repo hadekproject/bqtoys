@@ -131,6 +131,122 @@ header .toggle.active
 
 /*lista de productos*/
 
+.listaProductos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.listaProductos li
+{
+    list-style: none;
+    background: #eee;
+    padding: 12px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.listaProductos li.active 
+{
+    background: #03a9f4;
+    color: #fff;
+}
+
+/*lista de productos en cards*/
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23A9D8;
+    /*background: #16384c;*/
+
+}
+
+.product
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.product .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.product .card.hide
+{
+    display: none;
+}
+
+.product .card:hover
+{
+    height: 420px;
+}
+
+.product .card .imgBx
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product .card .imgBx img
+{
+    max-width: 100%;
+    border-radius: 4px;
+    
+}
+
+.product .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.product .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin: 15px;
+    transition-delay: 0.1s;
+}
+
+
+
+/*lista de productos*/
+
+/*
 .product
 {
     padding: 20px;
@@ -138,7 +254,6 @@ header .toggle.active
     display: flex;
     justify-content: center;
     align-items: center;
-    /*flex-direction: column;*/
     flex-wrap: wrap;
     margin: 40px auto;
 }
@@ -191,3 +306,4 @@ header .toggle.active
     height: 100%;
     object-fit: cover;
 }
+*/
